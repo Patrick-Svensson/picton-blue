@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon"  type="image/png" href="assets/images/picton-favi.png" sizes="64x64" aria-hidden="true">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon"  type="image/png" href="assets/images/picton-favi.png" sizes="64x64" aria-hidden="true">
         <link rel="icon"  type="image/png" href="assets/images/picton-favi.png" sizes="64x64" aria-hidden="true">
         <title>Picton Blue / Contact</title>
         <!-- ***** Bootstrap v4.6 *****-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
             integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/css/contact.css">
         <link rel="stylesheet" href="../styles/css/reset.css">
-        <link rel="stylesheet" href="../styles/css/contact.css" type="text/css">
-    </head>
-    <body>
+        <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="form-main">
+        <div class="form-container">
+            <form action="">
+                <!-- form start -->
+                <div class="form-title">
+                    <h3>CONTACT US</h3>
+                    <p>Send us a message</p>
+                </div> 
+                <input type="name" class="input-text" name="" id="" placeholder="First name">
+                <input type="name" class="input-text" name="" id="" placeholder="Last name">
+                <input type="email" class="input-text email" name="" id="" placeholder="Email" required>
+
+                <div class="select-box">
+                    <label for="select">Subject</label>
+                    <svg height="100" width="206">
+                        <circle cx="196.5" cy="22" r="7" stroke="black" stroke-width="2" fill="transparent" />
+                      </svg>
+                    <select type="text"
+                    class="select" name="select" id="select" required>
+                        <option disabled selected>--Select a subject--</option>
+                        <option value="Booking">Booking</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Invoice">Invoice</option>
+                    </select>
+                </div>
+
+                <label for="textarea">Message</label>
+                <textarea name="textarea" class="input-text message"
+                id="textarea" placeholder="Write your message here" 
+                maxlength="1000" minlength="20" required></textarea>
+
+                <button class="form-button">SUBMIT</button>
+            </form>
+            <!-- form end -->
+
+           
         
-        <!-- ***** Bootstrap JavaScript bundle v4.6 *****-->
+            <!-- location start -->
+            <div class="location">
+                <div class="div1">
+                    <h6>OR VISIT US!</h6>
+                    <p>Picton Blue</p>
+                    <p> 357 Seaside Avenue,</p>
+                    <p> CA 927458, USA</p>
+                
+                </div>
+
+                <div class="locaiton-img">
+                    <a href="https://www.google.com/maps/search/Picton+Blue+357+Seaside+Avenue,+CA+927458,+USA/@63.8118269,20.2162666,14z/data=!3m1!4b1">
+                        <img class="location-img" src="../images/LA.PNG" alt="Map">
+                    </a>
+                </div>
+            </div>
+            <!-- location end -->
+        </div>
+    </main>
+
+    <!-- ***** Bootstrap JavaScript bundle v4.6 *****-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
             integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" 
             integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>
