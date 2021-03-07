@@ -1,6 +1,15 @@
 .form:first-child {
   width: 300px;
   border-radius: 20px;
+  background-color: #f6fcfe;
+}
+
+.navbar {
+  background-color: #094053;
+}
+
+.nav-link {
+  color: #9ed9cf;
 }
 
 /*# sourceMappingURL=navbar.css.map */

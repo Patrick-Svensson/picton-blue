@@ -1,0 +1,19 @@
+// ***** Authored Dependencies *****
+
+@use "colours";
+
+// ***** Navigation *****
+
+.form:first-child {
+    width: 300px;
+    border-radius: 20px;
+    background-color: colours.$light;
+}
+
+.navbar {
+    background-color: colours.$dark;
+}
+
+.nav-link {
+    color: colours.$secondary;
+}
