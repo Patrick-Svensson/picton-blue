@@ -13,6 +13,11 @@
 .navbar {
     background-color: colours.$dark;
 }
+    
+.navbar-toggler-icon {
+    font-size: 1.8rem;
+    color: colours.$secondary;
+}
 
 .nav-link {
     color: colours.$secondary;

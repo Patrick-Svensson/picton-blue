@@ -8,6 +8,11 @@
   background-color: #094053;
 }
 
+.navbar-toggler-icon {
+  font-size: 1.8rem;
+  color: #9ed9cf;
+}
+
 .nav-link {
   color: #9ed9cf;
 }
