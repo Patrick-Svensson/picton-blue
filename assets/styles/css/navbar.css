@@ -1,0 +1,28 @@
+body {
+  font-family: "Federo", sans-serif;
+}
+
+.form:first-child {
+  width: 250px;
+  border-radius: 20px;
+  background-color: #f6fcfe;
+  letter-spacing: 0.08rem;
+}
+
+.navbar {
+  background-color: #094053;
+}
+.navbar-toggler-icon {
+  font-size: 1.8rem;
+  color: #9ed9cf;
+}
+
+.nav-link {
+  color: #9ed9cf;
+  letter-spacing: 0.1rem;
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+  color: #49c2eb;
+}
+
+/*# sourceMappingURL=navbar.css.map */
