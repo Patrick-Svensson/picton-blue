@@ -4,22 +4,20 @@
 
 // ***** Generic *****
 
-body {
-    font-family: 'Federo', sans-serif;
-    color: colours.$secondary;
-    letter-spacing: .08rem;
-    line-height: 1.3rem;
-}
-
 .footer {
     width: 100%;
-    height: 14rem;
+    height: 18rem;
     background-color: colours.$dark;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Federo', sans-serif;
+    color: colours.$secondary;
+    letter-spacing: .08rem;
+    line-height: 1.5rem;
 
-    &__container {
+
+    &-container {
         width: 90%;
         height: 80%;
         display: flex;
@@ -28,52 +26,128 @@ body {
         align-items: center;    
     }
 
-    &__address {
+// ***** Address *****
+
+    &-address {
         width: 100%;
         display: flex;
         flex-direction: column;
+
+        &__heading {
+            color: #f97f77;
+        
+            &--main-colour {
+                color: colours.$main;
+            }
+        } 
+            
+        &__zip-code {
+            text-transform: uppercase;
+        }       
     }
 
-    &__contact {
+// ***** Social Media *****
+
+    &-social {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-
-    }
-
-    &__social {
-        width: 10rem;
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
 
     }
 
-}
-
-.address-heading {
-    color: #f97f77;
-
-    &--main-colour {
-        color: colours.$main;
-    }
-}
-
-.list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+    .footer-list {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        
+        &__icons {
+            font-size: 1.5rem;
+            color: colours.$secondary;
     
-    &__icons {
-        font-size: 1.5rem;
-        color: colours.$secondary;
-
-        &:hover {
-            color: colours.$main;
+            &:hover {
+                color: colours.$main;
+            }
         }
     }
+    
+// ***** Contact *****
 
+    &-contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+// ***** Media Queries *****
+
+@media screen and (min-width: 769px) {
+
+    .footer {
+        height: 20rem;
+        letter-spacing: .09rem;
+        line-height: 2rem;
+
+        &__text {
+            font-size: 1.2rem;
+        }
+
+        &-address__heading {
+            font-size: 1.5rem;
+        }
+
+        &-contact__phone {
+            font-size: 1.5rem;
+        }
+
+        &-list__icons {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        height: 15rem;
+        letter-spacing: .1rem;
+        line-height: 2.5rem;
+
+        &-container {
+            height: 60%;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+        }
+
+        &-address {
+            width: 30%;
+            
+            &__heading {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-social {
+            width: 30%;
+        }
+
+        &-contact {
+            width: 40%;
+
+            &__phone {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-list {
+            width: 100%;
+        }
+    }
 }
