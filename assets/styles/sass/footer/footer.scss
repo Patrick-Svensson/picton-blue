@@ -7,6 +7,8 @@
 body {
     font-family: 'Federo', sans-serif;
     color: colours.$secondary;
+    letter-spacing: .08rem;
+    line-height: 1.3rem;
 }
 
 .footer {
@@ -49,6 +51,14 @@ body {
 
     }
 
+}
+
+.address-heading {
+    color: #f97f77;
+
+    &--main-colour {
+        color: colours.$main;
+    }
 }
 
 .list {

@@ -1,6 +1,8 @@
 body {
   font-family: "Federo", sans-serif;
   color: #9ed9cf;
+  letter-spacing: 0.08rem;
+  line-height: 1.3rem;
 }
 
 .footer {
@@ -36,6 +38,13 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+}
+
+.address-heading {
+  color: #f97f77;
+}
+.address-heading--main-colour {
+  color: #49c2eb;
 }
 
 .list {
