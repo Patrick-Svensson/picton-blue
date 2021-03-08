@@ -26,7 +26,7 @@ p, h3, h6 {
 
 
         // form start
-            form {
+            .contact-form {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
@@ -192,8 +192,10 @@ p, h3, h6 {
 }
 }
 @media (max-width: 320px) {
-    form { width: 250px;
+    .contact-form { 
+        width: 250px;
     }
     .location {
-    transform: translate(15px, 20px);}
+    transform: translate(15px, 20px);
+    }
 }
