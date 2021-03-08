@@ -63,7 +63,7 @@
         list-style: none;
         
         &__icons {
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: colours.$secondary;
     
             &:hover {
@@ -103,10 +103,6 @@
         &-contact__phone {
             font-size: 1.5rem;
         }
-
-        &-list__icons {
-            font-size: 1.8rem;
-        }
     }
 }
 
@@ -142,7 +138,7 @@
             width: 40%;
 
             &__phone {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
         }
 

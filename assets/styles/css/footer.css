@@ -45,7 +45,7 @@
   list-style: none;
 }
 .footer .footer-list__icons {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #9ed9cf;
 }
 .footer .footer-list__icons:hover {
@@ -73,9 +73,6 @@
   }
   .footer-contact__phone {
     font-size: 1.5rem;
-  }
-  .footer-list__icons {
-    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -105,7 +102,7 @@
     width: 40%;
   }
   .footer-contact__phone {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .footer-list {
     width: 100%;
