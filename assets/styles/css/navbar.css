@@ -7,6 +7,10 @@ body {
   border-radius: 20px;
   background-color: #f6fcfe;
   letter-spacing: 0.08rem;
+  cursor: pointer;
+}
+.form:first-child:hover {
+  background-color: #9ed9cf;
 }
 
 .navbar {

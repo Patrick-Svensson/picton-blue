@@ -4,14 +4,12 @@ html, body {
 }
 
 * {
-  margin: 0px;
-  box-sizing: border-box;
   font-family: "Federo", sans-serif;
 }
 
 p, h3, h6 {
   margin: 0px;
-}
+  }
 
 .form-main {
   display: flex;
@@ -21,7 +19,8 @@ p, h3, h6 {
   height: 100%;
 }
 
-form {
+
+.contact-form {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,7 +34,7 @@ form {
   color: #9ED9CF;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
-form .form-title {
+.contact-form .form-title {
   display: flex;
   flex-direction: column;
   margin-bottom: 18px;
@@ -43,23 +42,23 @@ form .form-title {
   text-align: center;
   height: 57px;
 }
-form .form-title h3 {
+.form-title-h3 {
   font-size: 29px;
   font-weight: bold;
 }
-form .form-title p {
+.contact-form .form-title-p {
   font-size: 14px;
 }
-form .select-box {
+.contact-form .select-box {
   display: flex;
   flex-direction: column;
 }
-form .select-box svg {
+.contact-form .select-box svg {
   position: absolute;
   pointer-events: none;
   z-index: 1;
 }
-form .input-text, form select {
+.contact-form .input-text, .contact-form select {
   width: 206px;
   height: 20px;
   border-radius: 8px;
@@ -69,40 +68,37 @@ form .input-text, form select {
   border-color: #707070;
   background: #9ED9CF;
 }
-form .input-text:hover, form select:hover {
+.contact-form .input-text:hover, .contact-form select:hover {
   filter: brightness(1.08);
 }
-form input::-moz-placeholder, form textarea::-moz-placeholder {
+.contact-form input::placeholder, .contact-form textarea::placeholder, .contact-form option, .contact-form select {
   color: #094053;
   font-size: 11px;
   padding-left: 5px;
 }
-form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-  color: #094053;
-  font-size: 11px;
-  padding-left: 5px;
-}
-form input::placeholder, form textarea::placeholder, form option, form select {
-  color: #094053;
-  font-size: 11px;
-  padding-left: 5px;
-}
-form .email {
+.contact-form .email {
   margin-bottom: 13px;
 }
-form .select {
+.contact-form .select {
   padding: 1px;
   margin-bottom: 5px;
   cursor: pointer;
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  appearance: none;
 }
-form .message {
+.contact-form .message {
   height: 75px;
 }
-form label {
+.contact-form label {
   width: 206px;
   height: 12px;
   font-size: 11px;
   margin: 0px;
+  -webkit-transform: translateY(-2px);
+  -moz-transform:    translateY(-2px);
+  -ms-transform:     translateY(-2px);
+  -o-transform:      translateY(-2px);
   transform: translateY(-2px);
 }
 
@@ -121,6 +117,7 @@ form label {
 }
 
 .form-button:hover {
+  background-color: #49c2eb;
   color: #094053;
 }
 
@@ -139,6 +136,10 @@ form label {
   color: #9ED9CF;
   padding: 17px;
   padding-top: 11px;
+  -webkit-transform: translate(280px, -358px);
+  -moz-transform:    translate(280px, -358px);
+  -ms-transform:     translate(280px, -358px);
+  -o-transform:      translate(280px, -358px);
   transform: translate(280px, -358px);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
@@ -152,12 +153,12 @@ form label {
   flex-direction: column;
   justify-content: space-between;
 }
-.div1 h6 {
+.div1-h6 {
   font-size: 14px;
   margin-bottom: 8px;
   font-weight: bold;
 }
-.div1 p {
+.div1-p {
   font-size: 16px;
 }
 
@@ -172,16 +173,37 @@ form label {
 }
 
 @media (max-width: 700px) {
+html, body {
+    height: 800px;
+  }
+
   .location {
+    -webkit-transform: translate(50px, 20px);
+    -moz-transform:    translate(50px, 20px);
+    -ms-transform:     translate(50px, 20px);
+    -o-transform:      translate(50px, 20px);
     transform: translate(50px, 20px);
   }
+  .form-container {
+    -webkit-transform: translateY(-100px);
+    -moz-transform:    translateY(-100px);
+    -ms-transform:     translateY(-100px);
+    -o-transform:      translateY(-100px);
+    transform: translateY(-100px);
+  } 
 }
 @media (max-width: 320px) {
-  form {
+  .contact-form {
     width: 250px;
   }
 
   .location {
+    -webkit-transform: translate(15px, 20px);
+    -moz-transform:    translate(15px, 20px);
+    -ms-transform:     translate(15px, 20px);
+    -o-transform:      translate(15px, 20px);
     transform: translate(15px, 20px);
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+
+/*# sourceMappingURL=contact.css.map */
