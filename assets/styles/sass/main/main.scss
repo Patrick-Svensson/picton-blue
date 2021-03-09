@@ -1,12 +1,6 @@
 
 body {
     background-color: #094053;
-    background-image: url(/assets/images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    height: auto;
     font-family: 'Federo', sans-serif;
 }
  /* MAIN PAGE */
@@ -15,6 +9,15 @@ body {
 h2 {
     color:#9ED9CF;
 }
+
+
+.logo__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:40px;
+}
+
  .movie__text{ 
     display: flex;
     flex-wrap: wrap;
@@ -96,3 +99,9 @@ a:link {
    color:#F97F77;
     margin-left: 10px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .video__box {
+        width: 90%; 
+    }
+  }

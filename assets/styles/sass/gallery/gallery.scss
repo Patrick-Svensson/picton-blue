@@ -1,15 +1,9 @@
 body {
     background-color: #094053;
-    background-image: url(/assets/images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    height: auto;
 }
 
 .gallery__page {
-    height: 60em;
+    height: 70em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
