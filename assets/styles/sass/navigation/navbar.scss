@@ -1,0 +1,38 @@
+// ***** Authored Dependencies *****
+
+@use "../colours";
+
+// ***** Generic *****
+
+body {
+    font-family: 'Federo', sans-serif;
+}
+
+// ***** Navigation *****
+
+.form:first-child {
+    width: 250px;
+    border-radius: 20px;
+    background-color: colours.$light;
+    letter-spacing: .08rem;
+}
+
+.navbar {
+    background-color: colours.$dark;
+        
+    &-toggler-icon {
+        font-size: 1.8rem;
+        color: colours.$secondary;
+    }
+}
+
+.nav-link {
+    color: colours.$secondary;
+    letter-spacing: .1rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: colours.$main;
+    }
+}
