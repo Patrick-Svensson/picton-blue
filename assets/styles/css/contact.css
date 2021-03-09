@@ -82,6 +82,9 @@ p, h3, h6 {
   padding: 1px;
   margin-bottom: 5px;
   cursor: pointer;
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  appearance: none;
 }
 .contact-form .message {
   height: 75px;
