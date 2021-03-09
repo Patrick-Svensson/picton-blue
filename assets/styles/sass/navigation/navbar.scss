@@ -15,6 +15,11 @@ body {
     border-radius: 20px;
     background-color: colours.$light;
     letter-spacing: .08rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: colours.$secondary;
+    }
 }
 
 .navbar {
