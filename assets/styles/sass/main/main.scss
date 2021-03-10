@@ -18,6 +18,7 @@ body {
 h1 {
     color:#F97F77;
     letter-spacing: 5px;
+    margin-top: 50px;
 }
 
 
@@ -83,9 +84,31 @@ a:link {
     margin-left: 10px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 840px) {
     .video__box {
-        width: 90%; 
+        width: 500px;
+        height: 300px; 
     }
 }
 
+@media screen and (max-width: 550px) {
+
+    .logo__box {
+        height: 600px;
+    }
+
+    .logo {
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+
+    .video__box {
+        width: 300px;
+        height: 180px;
+    }
+}

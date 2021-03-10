@@ -1,28 +1,37 @@
 body {
+  background-color: #094053;
   font-family: "Federo", sans-serif;
+  max-width: 1710px;
+  width: 100%;
 }
 
 /* MAIN PAGE */
-/*Thinking the text will be clearer on space lower, when navbar is added*/
-h2 {
-  color: #9ED9CF;
+.main__page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.movie__text {
+h1 {
+  color: #F97F77;
+  letter-spacing: 5px;
+  margin-top: 50px;
+}
+
+.logo__box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: black;
-  color: #F97F77;
-  border-radius: 10px;
-  opacity: 0.8;
-  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1710px;
+  height: 900px;
 }
 
-.box__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.fa-angle-down {
+  color: #F97F77;
+  cursor: pointer;
 }
 
 .video__container {
@@ -30,6 +39,7 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .text__container {
@@ -40,10 +50,6 @@ h2 {
 
 a:link {
   text-decoration: none;
-}
-
-.movie__link {
-  color: white;
 }
 
 .show__btn {
@@ -65,19 +71,40 @@ a:link {
   transition: all 0.3s ease 0s;
 }
 
-.lek1 {
-  list-style: none;
-  color: black;
-  font-size: 30px;
-}
-
-.first__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.movie__link {
+  color: white;
 }
 
 .fa-film {
   color: #F97F77;
   margin-left: 10px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 840px) {
+  .video__box {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .logo__box {
+    height: 600px;
+  }
+
+  .logo {
+    max-width: 280px;
+  }
+
+  h1 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+  }
+
+  .video__box {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
